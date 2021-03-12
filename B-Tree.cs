@@ -8,45 +8,45 @@ namespace RedBlackTree {
 
         private static uint WeightBuffer { get; set; }
         /// <summary>
-        /// 权重
+        /// Used for Skiping Depth
         /// </summary>
         public uint Weight { get; set; }
         /// <summary>
-        /// 是否在叶 0-不在 1-在
+        /// Check if in leaves 0-not in 1-in
         /// </summary>
         public uint InLeaf { get; set; }
 
         /// <summary>
-        /// 孩子节点数
+        /// ChildNodeNumber
         /// </summary>
         public int ChildrenNodeNumber { get; set; }
 
         /// <summary>
-        /// 子节点id
+        /// ChildNode Stack
         /// </summary>
         private Stack<Node> ChildrenNodes { get; set; }
 
         /// <summary>
-        /// 剩余节点数
+        /// Total Free Slot
         /// </summary>
         private int NodesLeft { get; set; }
 
         /// <summary>
-        /// 最大层数
+        /// Maxium Height Of B-Tree
         /// </summary>
         private uint MaximumHeight { get; set; }
 
         /// <summary>
-        /// 根Id
+        /// Root Id
         /// </summary>
         private uint RootId { get; set; }
 
         /// <summary>
-        /// 根pId
+        /// Root Parent Id
         /// </summary>
         private uint RootPid { get; set; }
         /// <summary>
-        /// 根name
+        /// Root Data
         /// </summary>
         private T RootData { get; set; }
 
