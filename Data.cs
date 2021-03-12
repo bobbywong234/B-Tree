@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System;
 
-namespace Question_5.Models {
+namespace Models {
     public class Data {
         public uint IdCard { get; set; }
         public string Name { get; set; }
