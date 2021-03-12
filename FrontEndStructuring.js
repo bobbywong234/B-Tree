@@ -1,4 +1,4 @@
-﻿//构建红黑树
+//Parse B-Tree
 function structuring(tree, level) {
     let childrenString = "";
     level += 2;
@@ -23,17 +23,17 @@ function structuring(tree, level) {
     return childrenString;
 }
 
-//获取红黑树数据
-function redblacktreeonload() {
+//Access
+function BminusTreeonload() {
     let buffer;
     $.ajax({
         type: "Get",
         datatype: "json",
         timeout: 20000,
-        url: "api/redblacktree",
+        url: "api/bminustree",
     }).then((res => {
         buffer = res;
-        $("#RedBlackTree").append('<div>红黑树结构 </div>')
+        $("#B-Tree").append('<div>B-Tree Structure </div>')
         let elementString = '<div id="' + buffer.id.toString() +
             '" style="padding-left:0em">{Id:' +
             buffer.id + ', '
@@ -43,6 +43,6 @@ function redblacktreeonload() {
             + '}';
         elementString += structuring(buffer, -1);
         elementString += '</div>';
-        $("#RedBlackTree").append(elementString);
+        $("#B-Tree").append(elementString);
     }));
 }
