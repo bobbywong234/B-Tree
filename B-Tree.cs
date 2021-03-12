@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace RedBlackTree {
+namespace BMinusTree {
     public class Tree<T> {
 
         private static uint WeightBuffer { get; set; }
